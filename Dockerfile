@@ -18,15 +18,12 @@ LABEL "com.github.actions.icon"="code"
 # And all of the available colors: https://developer.github.com/actions/creating-github-actions/creating-a-docker-container/#label
 LABEL "com.github.actions.color"="orange"
 
-# Copy the package.json and package-lock.json
-COPY package.json ./
-COPY yarn.lock ./
+# Copy the rest of your action's code
+COPY . /
 
 # Install dependencies
 RUN yarn
 
-# Copy the rest of your action's code
-COPY . .
 
 # Run `node /lib/index.js`
 ENTRYPOINT ["node", "/lib/index.js"]
