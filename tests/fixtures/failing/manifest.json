@@ -1,0 +1,6 @@
+{
+  "builders": {
+    "node": "1.x",
+    "react": "1.x"
+  }
+}
