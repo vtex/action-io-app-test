@@ -13,9 +13,7 @@
     ]
   },
   "dependencies": {
-    "actions-toolkit": "^4.0.0",
-    "tiny-glob": "^0.2.6",
-    "yarn": "^1.22.4"
+    "actions-toolkit": "^4.0.0"
   },
   "devDependencies": {
     "@vtex/prettier-config": "^0.1.4",
