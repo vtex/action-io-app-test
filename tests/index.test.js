@@ -20,8 +20,7 @@ beforeEach(() => {
   jest.spyOn(tools.exit, 'failure').mockImplementation()
 })
 
-// eslint-disable-next-line jest/no-disabled-tests
-describe.skip('success', () => {
+describe('success', () => {
   beforeAll(() => {
     process.env.GITHUB_WORKSPACE = resolve(__dirname, 'fixtures', 'passing')
   })
