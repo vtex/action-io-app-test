@@ -1,4 +1,4 @@
-# VTEX IO test action
+# VTEX IO Apps test action
 
 This is a simple Github action that runs the `test` script of IO apps. The action searches for a `manifest.json` in the root of the project and for a `package.json` for each builder the manifest has.
 
